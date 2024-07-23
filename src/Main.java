@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Choose an option:");
-        System.out.println("1: Convert Decimal to Binary");
+        System.out.println("\n1: Convert Decimal to Binary");
         System.out.println("2: Convert Binary to Decimal");
+        System.out.print("Choose an option: ");
         int choice = scanner.nextInt();
 
         switch (choice) {
@@ -14,13 +14,13 @@ public class Main {
                 System.out.print("Enter a decimal number: ");
                 int decimal = scanner.nextInt();
                 String binary = decimalToBinary(decimal);
-                System.out.println("Binary equivalent: " + binary);
+                System.out.println("\n" + decimal + " to Binary is " + binary);
                 break;
             case 2:
                 System.out.print("Enter a binary number: ");
                 String binaryInput = scanner.next();
                 int decimalEquivalent = binaryToDecimal(binaryInput);
-                System.out.println("Decimal equivalent: " + decimalEquivalent);
+                System.out.println("\n" + binaryInput + " to decimal is " + decimalEquivalent);
                 break;
             default:
                 System.out.println("Invalid choice. Please choose either 1 or 2.");
