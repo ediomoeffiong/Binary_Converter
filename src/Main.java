@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("\n1: Convert Decimal to Binary");
         System.out.println("2: Convert Binary to Decimal");
-        System.out.print("Choose an option: ");
+        System.out.print("Choose an option (1/2): ");
         int choice = scanner.nextInt();
 
         switch (choice) {
